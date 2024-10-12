@@ -17,26 +17,25 @@ public class Bai5_PTBac2 {
 	}
 
 	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double a = 0;
-        double b = 0;
-        double c = 0;
-        boolean check = false;
+		Scanner sc = new Scanner(System.in);
+		double a = 0;
+		double b = 0;
+		double c = 0;
+		boolean check = false;
 		while (!check) {
 			try {
 				System.out.print("Nhập a: ");
-		        a = Double.parseDouble(sc.nextLine());
-		        System.out.print("Nhập b: ");
-		        b = Double.parseDouble(sc.nextLine());
-		        System.out.print("Nhập c: ");
-		        c = Double.parseDouble(sc.nextLine());
+				a = Double.parseDouble(sc.nextLine());
+				System.out.print("Nhập b: ");
+				b = Double.parseDouble(sc.nextLine());
+				System.out.print("Nhập c: ");
+				c = Double.parseDouble(sc.nextLine());
 				check = true;
 			} catch (NumberFormatException e) {
 				System.out.println("Vui lòng nhập lại");
 			}
 		}
-        TinhNghiem(a, b, c);
-        sc.close();
-    }
-		
+		TinhNghiem(a, b, c);
+		sc.close();
+	}
 }

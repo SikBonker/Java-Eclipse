@@ -1,53 +1,44 @@
 package Buoi1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bai8_Danhsach {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> list = new ArrayList<>();
-        
-        // Nhập danh sách các số nguyên
-        System.out.println("Nhập số lượng phần tử trong danh sách: ");
+        System.out.print("Nhap so luong phan tu trong danh sach: ");
         int n = sc.nextInt();
-        
-        System.out.println("Nhập các số nguyên: ");
+        int[] danhSach = new int[n];
+
         for (int i = 0; i < n; i++) {
-            System.out.print("Số thứ " + (i + 1) + ": ");
-            list.add(sc.nextInt());
+            System.out.print("Nhap phan tu thu " + (i + 1) + ": ");
+            danhSach[i] = sc.nextInt();
         }
 
-        // Nhập số nguyên x cần đếm
-        System.out.print("Nhập số nguyên x cần đếm: ");
+        System.out.print("Nhap so nguyen x: ");
         int x = sc.nextInt();
-        
-        // Đếm số lần xuất hiện của x
-        int count = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == x) {
-                count++;
+
+        int dem = 0;
+        for (int i = 0; i < n; i++) {
+            if (danhSach[i] == x) {
+                dem++;
             }
         }
-        System.out.println("Số lần xuất hiện của " + x + ": " + count);
+        System.out.println("So " + x + " xuat hien " + dem + " lan trong danh sach.");
         
-        // Sắp xếp danh sách theo thứ tự tăng dần
-        for (int i = 0; i < list.size() - 1; i++) {
-            for (int j = i + 1; j < list.size(); j++) {
-                if (list.get(i) > list.get(j)) {
-                    // Hoán đổi các phần tử
-                    int temp = list.get(i);
-                    list.set(i, list.get(j));
-                    list.set(j, temp);
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (danhSach[j] > danhSach[j + 1]) {
+                    int temp = danhSach[j];
+                    danhSach[j] = danhSach[j + 1];
+                    danhSach[j + 1] = temp;
                 }
             }
         }
-        
-        // Hiển thị danh sách đã sắp xếp
-        System.out.println("Danh sách sau khi sắp xếp: ");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
+
+        System.out.println("Danh sach sau khi sap xep tang dan: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(danhSach[i] + " ");
         }
-        sc.close();
+        System.out.print(" ");
     }
 }
