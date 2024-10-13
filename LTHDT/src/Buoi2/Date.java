@@ -2,7 +2,7 @@ package Buoi2;
 
 import java.util.Scanner;
 
-class Date {
+public class Date {
 	private int ngay, thang, nam;
 
 	public Date() {
@@ -19,6 +19,11 @@ class Date {
 
 	public void HienThi() {
 		System.out.println(ngay + "/" + thang + "/" + nam);
+	}
+	
+	public String HienThiN() {
+		String s = ngay + "/" + thang + "/" + nam;
+		return s;
 	}
 
 	private int ngayTrongThang() { // Kiem tra tinh hop le
