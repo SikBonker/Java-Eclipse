@@ -2,8 +2,8 @@ package Buoi2;
 
 import java.util.Scanner;
 
-class Diem {
-	private int x, y;
+public class Diem {
+	protected int x, y;
 
 	public Diem() {
 		this.x = 0;
