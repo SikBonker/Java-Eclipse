@@ -3,7 +3,8 @@ package Buoi2;
 import java.util.Scanner;
 
 public class Date {
-	private int ngay, thang, nam;
+	public int ngay, thang;
+	public int nam;
 
 	public Date() {
 		this.ngay = 1;
@@ -15,6 +16,18 @@ public class Date {
 		this.ngay = ngay;
 		this.thang = thang;
 		this.nam = nam;
+	}
+	
+	public int getNgay() {
+		return this.ngay;
+	}
+	
+	public int getThang() {
+		return this.thang;
+	}
+	
+	public int getNam() {
+		return this.nam;
 	}
 
 	public void HienThi() {

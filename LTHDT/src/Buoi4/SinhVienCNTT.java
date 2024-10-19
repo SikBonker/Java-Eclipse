@@ -2,6 +2,7 @@ package Buoi4;
 
 import java.util.Scanner;
 
+import Buoi2.Date;
 import Buoi3.SinhVien;
 
 public class SinhVienCNTT extends SinhVien {

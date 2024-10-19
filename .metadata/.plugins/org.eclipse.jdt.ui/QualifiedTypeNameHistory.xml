@@ -16,6 +16,9 @@
     <fullyQualifiedTypeName name="Buoi2.Diem"/>
     <fullyQualifiedTypeName name="Buoi4.DiemMau"/>
     <fullyQualifiedTypeName name="Buoi3.SinhVien"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Buoi4.SinhVienCNTT"/>
+    <fullyQualifiedTypeName name="Buoi4.ConVat"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Buoi5.KhachHang"/>
+    <fullyQualifiedTypeName name="Buoi5.TheBus"/>
 </qualifiedTypeNameHistroy>

@@ -3,7 +3,7 @@ package Buoi2;
 import java.util.Scanner;
 
 public class Diem {
-	protected int x, y;
+	public int x, y;
 
 	public Diem() {
 		this.x = 0;
