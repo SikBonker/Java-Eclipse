@@ -22,7 +22,6 @@ class Diem {
 		return y;
 	}
 
-	// Setters
 	public void setX(int x) {
 		this.x = x;
 	}
